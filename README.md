@@ -150,6 +150,15 @@ Note: While Naive Bayes had 100% precision, the Ensemble models (Voting/Stacking
 
 Key insights derived from our Exploratory Data Analysis (EDA):
 
+<img width="600" height="600" alt="Figure_1" src="https://github.com/user-attachments/assets/9447734c-2494-4b80-a36c-f2cf5283c825" />
+
+<img width="1200" height="600" alt="Figure_2" src="https://github.com/user-attachments/assets/1d209588-8fde-41a4-9ef5-6c8d9974e70d" />
+
+<img width="1200" height="600" alt="Figure_3" src="https://github.com/user-attachments/assets/20b77ab0-2766-41c0-890f-e91f837da2a4" />
+
+<img width="800" height="600" alt="Figure_4" src="https://github.com/user-attachments/assets/a29762da-ef26-4472-9e87-d46fdeb7d884" />
+
+
 Target Balance: The dataset is imbalanced (87% Ham vs 13% Spam).
 
 Character Count: Spam messages are typically longer and hover around 150-160 characters (SMS limit), whereas Ham messages vary significantly.
