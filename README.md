@@ -127,6 +127,53 @@ A custom HTML generation function takes the LIME output and creates a visual rep
 The user sees the prediction, the confidence score, and the reasoning.
 
 
+## 📊 Model Performance & Results
+
+We evaluated multiple classifiers to find the best balance between Accuracy and Precision. Precision is critical in spam detection because we want to avoid False Positives (marking a safe email as spam).
+
+1. Classifier Comparison
+```
+
+|  Model  |  Accuracy  |  Precision  |
+|  MultinomialNB  |  97.68%  |  100.00%  |
+|  Logistic Regression  |  97.68%  |  100.00%
+|  SVC  | 98.55%  | 96.77%  |
+|  Random Forest  | 97.78%  |  99.09%  |
+|  Extra Trees  | 98.84%  |  97.60%  |
+|  Voting Classifier | 98.74% |  99.17%  |
+|  Stacking Classifier  |   98.55% |  96.03%  |
+```
+
+Note: While Naive Bayes had 100% precision, the Ensemble models (Voting/Stacking) provided a more robust generalization on unseen complex data.
+
+2. Data Visualizations
+
+Key insights derived from our Exploratory Data Analysis (EDA):
+
+Target Balance: The dataset is imbalanced (87% Ham vs 13% Spam).
+
+Character Count: Spam messages are typically longer and hover around 150-160 characters (SMS limit), whereas Ham messages vary significantly.
+
+3. LIME Explainability (XAI) in Action
+
+The core feature of this project is explaining why a message is classified as Spam. Below are real outputs from the model:
+
+Example 1: Spam Detection
+
+Message: "Congratulations! You won a $1000 gift card. Claim now."
+
+Prediction: 🚨 SPAM (100% Confidence)
+
+Explanation: Classified as SPAM because of words like: claim, gift, won.
+
+Example 2: Ham (Safe) Detection
+
+Message: "Don't forget to submit the assignment by tomorrow."
+
+Prediction: ✅ HAM (97% Confidence)
+
+Explanation: Classified as HAM because of words like: tomorrow, assignment, submit.
+
 ##  📊 Results
 
 
