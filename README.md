@@ -7,6 +7,13 @@ Unlike traditional "Black Box" classifiers, this project focuses on eXplainable 
 
 The model is built using an Ensemble Stacking Classifier to maximize accuracy and is deployed as an interactive web application using Streamlit.
 
+## Abstract
+The rapid proliferation of digital communication has led to an exponential increase in unsolicited spam messages, posing significant security risks and operational inefficiencies. While traditional Machine Learning (ML) models have proven effective in spam detection, they often function as "Black Boxes," lacking transparency in their decision-making processes. This project presents a high-precision Spam Email & SMS Classifier integrated with eXplainable AI (XAI) techniques to bridge the gap between model accuracy and human interpretability.
+
+The proposed system employs a robust Stacking Classifier, an ensemble learning technique that combines the strengths of Support Vector Machines (SVM), Multinomial Naive Bayes, and Extra Trees Classifiers, with a Random Forest meta-learner. To handle unstructured text data, the project utilizes advanced Natural Language Processing (NLP) pipelines, including TF-IDF vectorization and custom feature engineering (e.g., character and sentence counts).
+
+A distinguishing feature of this study is the integration of LIME (Local Interpretable Model-agnostic Explanations). Unlike conventional filters that simply label a message as "Spam" or "Ham," this system provides real-time, granular explanations by highlighting specific keywords (e.g., "urgent," "won," "free") that influenced the classification. The model is deployed via an interactive Streamlit web application, offering a user-friendly interface for real-time inference. Experimental results demonstrate that the Stacking Classifier achieves superior precision and accuracy compared to individual baseline models, while the LIME integration successfully enhances user trust by visualizing the model's reasoning logic.
+
 
 ## Key Features
 
